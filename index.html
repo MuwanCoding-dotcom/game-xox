@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Game XOX</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ============= LANDING PAGE ============= -->
+<div class="landing" id="landing">
+    <h1>Game SOS</h1>
+    <input type="text" id="playerName" placeholder="Masukin Nama Lu jir">
+    <button onclick="startGame()">sung mulai</button>
+</div>
+
+<!-- ============ AREA GAME ============= -->
+<div class="game hidden" id="game">
+    <h2 id="turnInfo">Giliran Lu</h2>
+    <div class="board" id="board"></div>
+    <button class="reset" onclick="resetGame()">MAIN ULANG GA LU</button>
+</div>
+
+<!-- ============ POPUP MENANG ============= -->
+<div class="popup hidden" id="popup">
+    <div class="popup-box">
+        <h2>🎮HASIL GAME🎮</h2>
+        <p id="winnerText"></p>
+        <p id="resultText"></p>
+        <button onclick="closePopup()">OKHHH</button>
+    </div>
+</div>
+
+<!-- =========== AUDIO ========== -->
+ <audio id="bgm" src="audio/bgm.mp3" loop></audio>
+ <audio id="clickSound" src="audio/clickSound.wav"></audio>
+ <audio id="winSound" src="audio/winSound.mp3"></audio>
+ <!-- bagian sendiri -->
+ <audio id="loseSound" src="audio/loseSound.mp3"></audio>
+ <audio id="nameIncorrect" src="audio/nameIncorrect.mp3"></audio>
+ <audio id="seriSound" src="audio/seriSound.mp3"></audio>
+ <!-- sampe sini -->
+
+<script src="script.js"></script>
+</body>
+</html>
